@@ -1,10 +1,13 @@
 # before-storybook
 
-Please do not use this for actual projects.
-We wrote this to test storybook with.
+1. Run `npm run storybook`
+2. Open `Docs` file of `Button` component
+3. The Docs page is in a rerender loop issue and the Console has errors:
 
-Storybook is a OSS tool that bootstraps on top of existing projects, like CRA, NextJS etc.
-But it also can be initialized on top of custom projects.
-That is what this is to simulate.
+```
+globals-runtime.js:6409  manager  received updateGlobals but was unable to determine the source of the event
 
-If you have any questions, please reach out to us on Discord.
+globals-runtime.js:6409  manager  received globalsUpdated but was unable to determine the source of the event
+4
+globals-runtime.js:6409  manager  received storyRenderPhaseChanged but was unable to determine the source of the event
+```
